@@ -2,29 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sample HTML5 Index</title>
+  <title>A Quotation</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+  
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <div>
-  <h1>Quotations</h1>
-  <div>
-    <blockquote>
-      "In any moment of decision, the best thing you can do is the right
-      thing, the next best thing is the wrong thing, and the worst thing
-      you can do is nothing."
-      <cite>Theodore Roosevelt</cite>
-    </blockquote>
-  </div>
-  <div class="container">
-    <form action="https://www.paypal.com/donate" method="post" target="_top">
-      <input type="hidden" name="business" value="W6BJB8AENCBDQ" />
-      <input type="hidden" name="no_recurring" value="0" />
-      <input type="hidden" name="item_name" value="Hey, how are you? Are you overflowing with cash? I'll take some! Have a nice day!" />
-      <input type="hidden" name="currency_code" value="USD" />
-      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-      <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-    </form>
-  </div>
+  <canvas id="canvas">Canvas is not supported in your browser.</canvas>
+  <canvas id="canvas2">Canvas is not supported in your browser.</canvas>
+    <div class="overlay fade-in">
+      <div>
+      <h1>Quotation</h1>
+        <blockquote>
+          "In any moment of decision, the best thing you can do is the right
+          thing, the next best thing is the wrong thing, and the worst thing
+          you can do is nothing."
+          <cite>-Theodore Roosevelt</cite>
+        </blockquote>
+      </div>
+      <div class="container">
+        <form action="https://www.paypal.com/donate" method="post" target="_top">
+          <div class="message">
+            In light of this quote, I challenge you with this: don't do nothing — here's my PayPal.
+          </div>
+          <input type="hidden" name="business" value="W6BJB8AENCBDQ" />
+          <input type="hidden" name="no_recurring" value="0" />
+          <input type="hidden" name="item_name" value="Hey there! Thanks for checking out my site. I'm just a guy doing my thing. If you're feeling generous, feel free donate any amount that won't break the bank. Have an awesome day!" />
+          <input type="hidden" name="currency_code" value="USD" />
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+          <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+      </div>
+    </div>
+  <script src="matrix.js"></script>
 </body>
 </html>

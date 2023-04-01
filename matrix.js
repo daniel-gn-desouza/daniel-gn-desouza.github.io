@@ -9,7 +9,7 @@ var canvas = document.getElementById( 'canvas' ),
     charArr = ["ࢠ","ࢡ","ࢢ","ࢳ","ࢴ","ࢸ","ࢺ","ࢴ","ࢴ","ࢱ","ࢣ","ࢪ","ࢬ","ࢯ","ࢮ","ݡ"],
     maxCharCount = 100,
     fallingCharArr = [],
-    fontSize = 10,
+    fontSize = 15,
     maxColums = cw/(fontSize);
     canvas.width = canvas2.width = cw;
     canvas.height = canvas2.height = ch;
@@ -32,7 +32,7 @@ var canvas = document.getElementById( 'canvas' ),
     Point.prototype.draw = function(ctx){
 
       this.value = charArr[randomInt(0,charArr.length-1)].toUpperCase();
-      this.speed = randomFloat(1,5);
+      this.speed = randomFloat(1,60);
 
 
       ctx2.fillStyle = "rgba(255,255,255,0.8)";
